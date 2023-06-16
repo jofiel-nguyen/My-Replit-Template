@@ -1,0 +1,41 @@
+h1 {
+    color: blue;
+  }
+  
+  button {
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+  }
+  
+  @keyframes cursorAnimation {
+    0% {
+      cursor: pointer;
+    }
+    50% {
+      cursor: grab;
+    }
+    100% {
+      cursor: pointer;
+    }
+  }
+  
+  .cursor-animation {
+    animation: cursorAnimation 3s infinite;
+  }
+  
+  /* Media Query for screens smaller than 600px */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  
+  /* Media Query for screens larger than 1200px */
+  @media (min-width: 1200px) {
+    button {
+      background-color: green;
+      color: white;
+    }
+  }
+  
